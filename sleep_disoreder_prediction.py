@@ -115,6 +115,31 @@ def predict(responses):
     prediction = RF_Model.predict(response_arr)
     return prediction
 
+def footer():
+    # Footer Section
+    st.markdown('<style>div.block-container{padding-bottom: 100px;}</style>', unsafe_allow_html=True)
+    st.markdown("""---""")
+    st.markdown("""
+        ### 🚀 Let's Connect!
+        This Application is Developed by **Abdul Faheem** with 💡 and 🥤. If you have any questions or just want to connect, feel free to reach out!
+        
+        <p align="left">
+          <a href="https://www.linkedin.com/in/abdulfaheem011/" target="_blank">
+            <img src="https://img.icons8.com/fluent/48/000000/linkedin.png" alt="LinkedIn" style="width:40px;"/>
+          </a>
+          <a href="https://github.com/abdulfaheemaf" target="_blank">
+            <img src="https://img.icons8.com/fluent/48/000000/github.png" alt="GitHub" style="width:40px;"/>
+          </a>
+          <a href="mailto:abdulfaheemaf11@gmail.com">
+            <img src="https://img.icons8.com/fluent/48/000000/mail.png" alt="Email" style="width:40px;"/>
+          </a>
+        </p>
+        
+        Cheers,
+        
+        -AF011
+    """, unsafe_allow_html=True)
+
 def main():
     col1, col2 = st.columns(2)
     col1.title('DreamCatcher: Your Guardian of Nightly Peace')
@@ -186,6 +211,8 @@ def main():
         </style>
         """
         st.markdown(hide_menu_style, unsafe_allow_html=True)
+
+    footer()
         
 if __name__ == '__main__':
     main()
