@@ -80,7 +80,7 @@ questions = [
     ("Occupation", "Select your Occupation", list(occupation_mapping.keys()), "selectbox"),
     ("Sleep_Duration", "Sleep Duration per Day", (1, 20), "number_input"),
     ("Quality_of_Sleep", "Quality of Sleep", (1, 10), "slider"),
-    ("Physical_Activity_Level", "Physical Activity Level", (1, 10), "slider"),
+    ("Physical_Activity_Level", "Physical Activity Level", (30, 90), "slider"),
     ("Stress_Level", "Stress Level", (1, 10), "slider"),
     ("BMI_Category", "Select the Body Type", list(body_type_mapping.keys()), "selectbox"),
     ("Blood_Pressure", "Select the Blood Pressure", list(blood_pressure_mapping.keys()), "selectbox"),
