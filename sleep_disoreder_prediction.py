@@ -77,7 +77,7 @@ with open('sleep_disorder_pred_RF.pickle', 'rb') as f:
 questions = [
     ("Gender", "Select your Gender", list(gender_mapping.keys()), "selectbox"),
     ("Age", "Enter your age", (10, 100), "number_input"),
-    ("Occupation", "Select an Occupation", list(occupation_mapping.keys()), "selectbox"),
+    ("Occupation", "Select your Occupation", list(occupation_mapping.keys()), "selectbox"),
     ("Sleep_Duration", "Sleep Duration per Day", (1, 20), "number_input"),
     ("Quality_of_Sleep", "Quality of Sleep", (1, 10), "slider"),
     ("Physical_Activity_Level", "Physical Activity Level", (1, 10), "slider"),
